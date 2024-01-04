@@ -31,6 +31,15 @@ app.get('/', (req, res) => {
 
 res.send('Hello World!')
 })
+
+app.post('/login', (req, res) => {
+    console.log(req.body);
+})
+
+app.get('/logout', (req, res) => {
+    res.send('logout')
+})
+
 app.listen(port, () => {
 console.log(`Example app listening on port ${port}`)
 })
